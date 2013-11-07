@@ -22,5 +22,24 @@ public class Startup {
         for(String s : list){
             System.out.println(s);
         }
+        
+        String record = fileManager.getRecord(filePath, 2);
+        System.out.println("");
+        System.out.println("Record 2: ");
+        System.out.println(record);
+        
+        System.out.println("");
+        System.out.println("Adding a record to the file!");
+        fileManager.addRecord(filePath, "Bond, James, 007 Agent Ave, Nowhere, NA, 00007, bond007@gmail.com, 1-007-007-007");
+        
+        System.out.println("");
+        System.out.println("Printing new appended file!");
+        
+        list.addAll(fileManager.inputFile(filePath));
+        
+//        for(String s : list){
+//            System.out.println(s);
+//        }
+        
     }
 }

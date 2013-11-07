@@ -4,12 +4,10 @@
  */
 package lab1;
 
-import java.util.Map;
-
 /**
  *
  * @author ndaley
  */
 public interface FileOutput {
-    public abstract void OutputFile(String filePath, Map m);
+    public abstract void addLine(String filePath, String s);
 }
