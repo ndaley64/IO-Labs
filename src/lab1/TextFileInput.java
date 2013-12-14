@@ -23,6 +23,7 @@ public class TextFileInput implements FileInput{
     
     @Override
     public List<String> inputFile(String filePath) {
+        lineList.clear();
         File file = new File(filePath);
         
         try{

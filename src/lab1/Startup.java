@@ -35,11 +35,11 @@ public class Startup {
         System.out.println("");
         System.out.println("Printing new appended file!");
         
-        list.addAll(fileManager.inputFile(filePath));
+        List<String> list2 = new ArrayList<String>(fileManager.inputFile(filePath));
         
-//        for(String s : list){
-//            System.out.println(s);
-//        }
+        for(String s : list2){
+            System.out.println(s);
+        }
         
     }
 }
